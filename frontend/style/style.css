@@ -6,12 +6,15 @@
 :root {
   font-size: 62.5%;
 }
+.loading {
+  background-color: red;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease-out;
 }
 
 body {
@@ -56,22 +59,35 @@ body {
   font-weight: 600;
   font-size: 3rem;
   transition: 2s ease-out;
+  color: #a743ee;
 }
 .txt-2 {
   font-weight: 300;
   font-size: 1.8rem;
   transition: 2s ease-in-out;
   filter: contrast(0.01);
+  padding-left: 4px;
 }
 .txt-3 {
   font-weight: 500;
   font-size: 2.5rem;
-  padding: 0px 10px;
+  padding: 8px 10px;
+  color: #a743ee;
 }
+
 .label {
   font-size: 1.5rem;
   filter: contrast(0.05);
   font-weight: 300;
+  position: relative;
+  left: 5px;
+  top: 15px;
+  transition: all 0.15s ease;
+}
+
+.labelAnim {
+  top: 0;
+  left: 0;
 }
 
 .txtTeamName,
@@ -103,7 +119,7 @@ body {
   border-radius: 5px;
   padding: 20px;
   width: 100%;
-  box-shadow: 0px 0px 4px 1.05px #0000001c;
+  box-shadow: 0px 0px 4px 2.05px #0000001c;
   animation: 1s bob ease-in-out;
   gap: 5px;
   background-color: #fbfbfb96;
@@ -114,27 +130,27 @@ body {
   padding: 4px;
   opacity: 0.8;
   border: none;
-  border-bottom: 1px solid #3c3c3c4a;
+  border-bottom: 1px solid #2196f387;
   background-color: #fbfbfb96;
 }
 
 .input-btn {
   display: flex;
   outline: none;
-  padding: 4px;
+  padding: 5px;
   border: none;
   background-color: #a743ee;
   box-shadow: 0px 0px 5px 2px #0b17271f;
   color: #fff;
   border-radius: 3px;
-  width: 80px;
-  transition: all 0.3s ease-in-out;
+  width: 60px;
+  transition: all 0.6s ease-in-out;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  font-size: 1.6rem;
 }
-#save {
-  opacity: 0.6;
-}
+
 .wrap-connect {
   display: flex;
   justify-content: space-between;
@@ -142,8 +158,9 @@ body {
 }
 
 .wrap-connect-btns .input-btn {
-  background-color: #240067;
+  background-color: #a743ee;
   width: min-content;
+  width: 80px;
   padding: 5px;
 }
 
@@ -154,9 +171,10 @@ body {
   gap: 5px;
 }
 
-.input-btn:hover,
+.input-btn:active,
 .wrap-add-btn:hover {
   filter: brightness(1.5);
+  opacity: 0.5;
 }
 
 .login-div {
@@ -320,4 +338,25 @@ input:checked + .slider:before,
 @keyframes topToBottom {
   0% {opacity: 0.1; transform: translateY(-100vh)}
   100% {opacity: 0.99; transform: translateY(0)}
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablet devices */
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* Styles for desktop devices */
 }

@@ -1,133 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Gmail API Quickstart</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./style/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media_queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inria Sans"
+      rel="stylesheet"
+    />
+
+    <title>Mziyonke Driving School</title>
   </head>
-  <body>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  
     <body>
-      <div class="header">
-        <p class="txt-1">Welcome</p>
-        <p class="txt-2">Admin Panel</p>
+    <div class="menu-content">
+            <div class="mobile-nav">
+
+        <span></span>
+          <div class="menu-cancel">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+          </div>
+        </div>
+      <div>
+      <ul>
+         <li class="menu-item"><a href="#">Home</a></li>
+         <li class="menu-item"><a href="">Apply</a></li>
+         <li class="menu-item">Info<a href=""></a></li>
+         <li class="menu-item">Contact<a href=""></a></li>
+         <li class="menu-item">Directions<a href=""></a></li>
+         <li class="menu-item">About<a href=""></a></li>
+      </ul>
       </div>
-      <div class="body">
-        
-        <div class="head">
-          <p class="txt-3">Login</p>
-        </div>
-        
-        <div class="login-div">
-          <div class="wrap">
-            <div class="wrap">
-              <label class="label" for="name">email:</label>
-            </div>
-            <div class="wrap">
-              <input type="email" class="input-input">
-            </div>
-          </div>
-          
-          <div class="wrap">
-            <div class="wrap">
-              <label class="label" for="name">password:</label>
-            </div>
-            <div class="wrap">
-              <input type="password" class="input-input">
-            </div>
-          </div>
-          
-          <div class="wrap">
-              <input type="button" class="input-btn" value="sign in">
-            </div>
-        </div>
+    </div>
+    <header class="header">
+  
+      <div class="navs">
 
-        
-        
+      <nav class="nav">
+        <ul class="nav_div_p opacity-85">
+          <li class="nav_p"><a href="#">Whatsapp</a></li>
+          <li class="nav_p"><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="nav_div_p2">
+          <p class="nav_p opacity_60">
+            <a class="text-cyan-300" href="#">Mziyonkefinancial@gmail.com</a>
+          </p>
+
+        </div>
+      </nav>
+      <div class="mobile-nav">
+        <div class="opacity-70">
+            <img
+              width="60"
+              height="60"
+              class="logo"
+              src="./src/images/logo.png"
+            />
+
+          </div>
+          <div class="menu">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        </div>
       </div>
+      <banner class="banner">
+        <div class="div_H1nH4nBtn">
+          <div class="container_banner_content">
+            <div class="div_heading">
+              <h1 class="heading_h1 text-8xl opacity-90">Mziyonke Driving School</h1>
+            </div>
 
-      <div class="teamview">
-
-          <div class="body">
-            <div class="wrap-connect">
-                  <div class="wrap">
-                    <label class="label" for="name">connect</label>
-                  </div>
-                  
-                  <div class="wrap-connect-btns">
-                    <input type="button" id="fb-auth-btn" class="input-btn" value="facebook page">
-                    <input type="button" id="g-auth-btn" class="input-btn" value="gmail">
-                  </div>
+            <div class="div_h4AndBtn">
+              <div class="h4-div">
+                <h4 class="heading_h4 opacity-75">With Mziyonke Driving School you can get your license and pay later</h4>
+              </div>
+              <div class="div_btn">
+                <input class="btn" type="button" value="Sign Up Now" />
+              </div>
             </div>
           </div>
-
-          <div class="body-2">
-
-            <div class="teammember">
-              <div class="wrap-n">
-              <p class="txt-t txtTeamName">Name</p>
-              </div>
-              <div class="wrap-e">
-                <p class="txt-t txtTeamEmail">Email</p>
-              </div>
-              <div class="wrap-g">
-                <p class="txt-t txtTeamGetMail">Send Mail</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="body-3">
-            <div class="new-member">
-            
-              <div class="wrap">
-              <div class="wrap">
-                <label class="label" for="name">name:</label>
-              </div>
-              
-              <div class="wrap">
-                <input type="text" id="add-member-name" class="input-input">
-              </div>
-              
-            </div>
-            
-                      <div class="wrap">
-              <div class="wrap">
-                <label class="label" for="name">email:</label>
-              </div>
-              <div class="wrap">
-                <input type="text" id="add-member-email" class="input-input">
-              </div>
-            </div>
-
-            <div class="wrap-add-btn">
-              <img src="./style/add.svg" id="add-member-email" />
-            </div>
-
-            </div>
-              
-            </div>
-            <div class="wrap">
-              <input type="button" id="cancel" class="input-btn" value="cancel">
-            </div>
-
-            <div class="wrap">
-              <input type="button" id="save" class="input-btn" value="Save">
-            </div>
-
-          </div>
-          
         </div>
+      </banner>
+    </header>
 
-      <div class="footer">
-        <p class="txt-footer">Copyright &copy; 2023 all rights reservesd</p>
+ <section class="section_services">
+    <div class="secTitle py-10"><h3 class="font-bold">Our Services</h3>
+        <div class="div-description">
+
+                <h4 class="description heading_h4 opacity-75">We offer a variety of licences and driving training. from a drivers licence all the way to a code14</h4>
+
+              </div>
+    </div>
+    <div class="servCards font-sans">
+          <div class="servContent">
+
+      <div class="servCard">
+        <div class="cardimagewrap">
+          <image class="cardimage" src='./src/images/cardpicture1.jpg' />
+        </div>
+        
+        <div class="cardPdiv">
+          <p class="p-btn">apply</p>
+          <p class="p1">Services</p>
+          <p class="p2">Services to be provided...</p>
+        </div>
+        
       </div>
       
-      <script type="module" src="./requests.js"></script>
-      <script type="module" src="./script.js"></script>
-      <script type="module" src="./handleUI.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-      <script type="module" src="./auth.js"></script>
-    </body>
+      <div class="servCard">
+        <div class="cardPdiv">
+          <p class="p-btn">apply</p>
+          <p class="p1">Services</p>
+          <p class="p2">Services to be provided...</p>
+        </div>
+      </div>
+      
+      <div class="servCard">
+        <div class="cardimagewrap">
+
+          <image class="cardimage testing" src='./src/images/cardpicture2.jpg' />
+
+        </div>
+        <div class="cardPdiv">
+
+          <p class="p-btn">apply</p>
+
+          <p class="p1">Services</p>
+          <p class="p2">Services to be provided...</p>
+        </div>
+      </div>
+      
+      <div class="servCard">
+        <div class="cardPdiv">
+          <p class="p-btn">apply</p>
+          <p class="p1">Services</p>
+          <p class="p2">Services to be provided...</p>
+        </div>
+      </div>
+      
+      <div class="servCard">
+        <div class="cardimagewrap">
+
+          <image class="cardimage" src='./src/images/cardpicture3.jpg' />
+
+        </div>
+        <div class="cardPdiv">
+          <p class="p-btn">apply</p>
+          <p class="p1">Services</p>
+          <p class="p2">Services to be provided...</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  
+  <section class="section-map">
+    <div class="h2-title">
+      <h3>Pay Us A Visit</h3>
+    </div>
+    <div class="map-wrapper"></div>
+  </section>
+  
+  <section class="section-application">
+
+    <div class="h2-title">
+
+      <h4 class="description heading_h4 opacity-75">begin the process to receiving a licence</h4>
+      <h3 class="font-sans font-medium">Apply Now!</h3>
+    </div>
+    <div class="application font-sans">
+      
+      <div class="inputs-wrapper">
+        <div class="input-wrapper-1">
+
+        <div class="input-title">
+
+          <p>name:</p>
+        </div>
+        <div class="input-input">
+          <input type="text" class="input" />
+        </div>
+        </div>
+        
+      <div class="input-wrapper-2">
+
+        <div class="input-title">
+          <p>last name:</p>
+        </div>
+        
+        <div class="input-input">
+          <input type="text" class="input" />
+        </div>
+      </div>
+      
+      </div>
+
+      <div class="input-wrapper-gender w-full">
+        <div class="wrap">
+          <p>gender:</p>
+        </div>
+
+        <div class="wrap w-full flex flex-col justify-center px-5">
+          <div class="wrap-gender">
+            <input type="radio" id="male" name="gender" value="female">
+            <label for="male">male</label>
+          </div>
+          
+          <div class="wrap-gender">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="input-email-phone flex flex-col">
+        
+          <div class="input-wrapper-2">
+    
+              <div class="input-title">
+                <p>email:</p>
+              </div>
+
+              <div class="input-input">
+                <input type="text" class="input" />
+              </div>
+          </div>
+          
+        <div class="input-wrapper-1">
+  
+          <div class="input-title">
+            <p>phone:</p>
+          </div>
+          
+          <div class="input-input">
+            <input type="number" class="input" />
+          </div>
+        </div>
+        <div class="input-licence-type">
+
+          <div class="input-title">
+  
+            <p>applying for:</p>
+          </div>
+          <div class="input-input max-w-52">
+            <select class="input-input input-select" name="license" id="license">
+              <option value="Learners">Learners</option>
+              <option value="Learners">Code10</option>
+              <option value="Learners">Code14</option>
+              <option value="Learners">Code15</option>
+            </select>
+          </div>
+        </div>
+        </div>
+        
+      <div class="div_btn">
+
+        <input class="btn" type="button" value="Submit" />
+
+      </div>
+      </div>
+      
+      
+    </div>
+  </section>
+  
+  <script src="./scripts/UI.js"></script>
+
   </body>
+  
 </html>
